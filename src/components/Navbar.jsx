@@ -25,7 +25,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav((prev) => !prev);
@@ -57,11 +57,11 @@ const Navbar = () => {
       <div
         className={
           !nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black px-4 ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black/80 px-4 ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
       >
-        <ul className="pt-12 uppercase text-lg">
+        <ul className="pt-12 uppercase text-lg font-semibold">
           {navLinks.map((item, index) => (
             <li
               className={`p-4 ${
