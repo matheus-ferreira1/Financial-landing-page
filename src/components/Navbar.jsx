@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white flex justify-between items-center h-24 px-4 max-w-[1240px] mx-auto">
       <h1 className="w-full text-3xl font-bold text-emerald-400 uppercase">
-        React
+        TeuzoBank
       </h1>
       {/* large devices menu */}
       <ul className="hidden md:flex">
