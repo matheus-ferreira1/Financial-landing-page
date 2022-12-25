@@ -25,7 +25,7 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav((prev) => !prev);
@@ -50,13 +50,13 @@ const Navbar = () => {
         ))}
       </ul>
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
       {/* mobile */}
       <div
         className={
-          !nav
+          nav
             ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black/90 px-4 ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
