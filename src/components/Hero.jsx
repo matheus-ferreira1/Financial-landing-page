@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="text-white z-0">
+    <section className="text-white z-0 py-8">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
         <p className="uppercase text-emerald-400 font-bold">
           growing with data analytics
